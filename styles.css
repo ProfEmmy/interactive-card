@@ -1,0 +1,255 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      letter-spacing: 3px;
+    }
+    .themain {
+      background-color: hsl(0, 0%, 100%);;
+    }
+    .center {
+      display: grid;
+      grid-template-rows: auto;
+    }
+    .div {
+      background-image: url('./images/bg-main-mobile.png');
+    }
+    
+    .images {
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 0px;
+      width: auto;
+    }
+    .div2 {
+      letter-spacing: 0px;
+      font-size: 13px;
+      top: 5rem;
+    }
+    .back {
+      position: absolute;
+      width: auto;
+      height: auto;
+    }
+    .front {
+      position: relative;
+      width: auto;
+      height: auto;
+      top: 13rem;
+      right: 5rem;
+    }
+    .frontimg {
+      position: relative;
+      font-family: 'Space Grotesk';
+      font-weight: 500;
+      color: hsl(0, 0%, 100%);
+      top: 5rem;
+      right: 8rem;
+    }
+    .fronttext2 {
+      font-size: 13px;
+      right: 11rem;
+    }
+    .fronttext3 {
+      right: 1rem;
+      top: 3.5rem;
+      font-size: 13px;
+    }
+    .cardlogodiv {
+      position: relative;
+    }
+    .cardlogo {
+      position: absolute;
+      right: 25rem;
+      bottom: 5rem;
+    }
+    .backtext {
+      font-family: 'Space Grotesk';
+      font-weight: 500;
+      color: hsl(0, 0%, 100%);
+      position: relative;
+      left: 23rem;
+    }
+    p {
+      font-family: 'Space Grotesk';
+    }
+    .forms {
+      border: 0px;
+      margin: 2rem;
+      margin-top: 8rem;
+    }
+    .dates {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #month {
+      width: 10vw;
+    }
+    #year {
+      width: 10vw;
+      margin-left: 10px;
+    }
+    #cvc {
+      width: 10vw;
+      margin-left: 20px;
+    }
+    #confirm {
+      width: auto;
+      height: auto;
+      background-color: hsl(278, 68%, 11%);
+      border: 0px;
+      border-color: hsl(278, 68%, 11%);
+      color: hsl(0, 0%, 100%);
+    }
+    input {
+      height: auto;
+      border: 0.1px solid;
+      border-color: hsl(249, 99%, 64%);
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    input:hover {
+      border-color: hsl(278, 94%, 30%);
+    }
+    .error {
+      color: hsl(0, 100%, 66%);
+      position: relative;
+      bottom: 10px;
+    }
+    .dateandcvc-errors {
+      display: grid;
+      grid-template-columns: 150px 100px;
+    }
+    .dateandcvc_error {
+      color: hsl(0, 100%, 66%);
+    }
+    .completed {
+      display: none;
+      border: 0px;
+      position: relative;
+      top: 7rem;
+      text-align: center;
+    }
+    .continue-btn {
+      border: 0px;
+      width: 260px;
+      height: 30px;
+      background-color: hsl(278, 68%, 11%);
+      color: hsl(0, 0%, 100%);
+      border-color: hsl(278, 68%, 11%);
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    .foot {
+      border: 0px;
+      position: relative;
+      top: 7rem;
+      margin-bottom: 0;
+      bottom: 0;
+    }
+    @media (min-width: 641px) {
+      .center {
+        display: grid;
+        grid-template-columns: 30vw 70vw;
+      }
+      .div {
+        height: 100vh;
+        background-image: url('./images/bg-main-desktop.png');
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      input {
+        width: auto;
+      }
+      .forms {
+        margin-left: 400px;
+      }
+      .frontimg {
+        position: relative;
+        left: 220px;
+      }
+      .fronttext2 {
+        margin-right: 120px;
+      }
+      .fronttext3 {
+        left: 20rem;
+      }
+      .cardlogo {
+        left: 208px;
+        bottom: 100px;
+      }
+      .back {
+        left: 270px;
+        top: 340px;
+      }
+      .front {
+        left: 160px;
+        top: 70px;
+      }
+      .backtext {
+        top: 340px;
+        left: 650px;
+      }
+      .fronttexts {
+        position: absolute;
+        top: 90px;
+        bottom: 0px;
+      }
+      input {
+        width: 300px;
+        height: 30px;
+      }
+      #month {
+        width: 50px;
+      }
+      #year {
+        width: 50px;
+      }
+      #cvc {
+        width: 157px;
+      }
+      #confirm {
+        width: 310px;
+        height: 30px;
+        position: relative;
+      }
+      .div2 {
+        position: relative;
+        bottom: 90px;
+      }
+      .btn {
+        position: relative;
+        bottom: 40px;
+      }
+      .completed {
+        position: relative;
+        left: 90px;
+        top: 50px;
+      }
+      .continue-btn {
+        width: 260px;
+        height: 30px;
+      }
+      .completed {
+        top: 140px;
+      }
+    }
+
+
+
+    @media (max-width: 641px) {
+      input {
+        display: flex;
+        align-items: center;
+      }
+    }

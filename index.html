@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space Grotesk">
+  <!--<script src="C:\Users\FAITH\Desktop\InteractiveCard\script.js"></script>-->
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="script.js" defer></script>
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <main class="themain">
+    <div class="center">
+      <div class="div">
+        <div class="images">
+          <img src="./images/bg-card-back.png" alt="card back" class="back">
+          <p class="backtext" id="cvc_display">000</p>
+          <div class="frontdiv">
+            <img src="./images/bg-card-front.png" alt="card front" class="front">  
+            <div class="fronttexts">      
+              <h2 class="frontimg fronttext" id="cardnum">0000 0000 0000 0000</h2>
+              <p class="frontimg fronttext2" id="cardname">JANE APPLESEED</p>
+              <p class="frontimg fronttext3" id="date"><span id="month_display">00</span>/<span id="year_display">00</span></p>
+            </div>
+            <div class="cardlogodiv">
+              <img src="./images/card-logo.svg" alt="card logo" class="cardlogo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div2">
+        <div class="completed" id="completed">
+          <div class="completed-img">
+            <img src="./images/icon-complete.svg" alt="Icon Complete" class="completed-icon">
+          </div>
+          <div class="text">
+            <h2 class="thank-you">THANK YOU!</h2>
+            <p class="complete">We've added your card details</p>
+          </div>
+          <div class="continue">
+            <button type="button" class="continue-btn">Continue</button>
+          </div>
+        </div>
+        <div class="forms" id="forms">
+          <form id="form">
+            <div class="name">
+              <b><p>CARDHOLDER NAME</p></b>
+              <input type="text" placeholder="e.g. Jane Appleseed" id="cardholder">
+              <p class="error" id="cardname_error"></p>
+            </div>
+            <div class="number">
+              <b><p>CARD NUMBER</p></b>
+              <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="cardnumber">
+              <p class="error" id="cardnumber_error"></p>
+            </div>
+            <div class="dateandcvc">
+              <b><p>EXP. DATE (MM/YY)   CVC</p></b>
+              <div class="dates">
+                <input type="text" placeholder="MM" id="month">
+                <input type="text" placeholder="YY" id="year">
+                <input type="text" placeholder="e.g. 123" id="cvc">
+              </div>
+              <div class="dateandcvc-errors">
+                <p class="dateandcvc_error" id="date_error"></p>
+                <p id="cvc_error" class="dateandcvc_error"></p>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="btn">
+              <input type="button" value="Confirm" id="confirm" onclick="result()">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/ProfEmmy/">Prof Emmy</a>.
+    </div>
+  </footer>
+
+  
+</body>
+</html>
